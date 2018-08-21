@@ -55,37 +55,86 @@
 ![Image](images/itc-app-menu.png)
 ![Image](images/itc-submission-binary.png)
 
+# Testing
+    
+##  Unit Testing
+    
+1.  Open ViewControllerUnitTests file and make the test fail
+    
+    ```
+    func testMoveScore() {
+        viewController.play(move: Move.Number)
+        let newScore = viewController.gameScore!
+        XCTAssertEqual(newScore, 5)
+    }
+    ```
+
+    * Corret the test and run again
+    
+2. Run the tests clicking at the diamond button on the left
+    
+## UI Testing
+1. Open ViewControllerUITests and make the test fail
+
+    ```
+    func testTapNumberScore() {
+        let numberButton = app.buttons["numberButton"]
+        
+        numberButton.tap()
+        let newScore = numberButton.label
+        XCTAssertEqual(newScore, "5")
+    }
+    ```
+
+    * Correct the test and run again
+
+2. Run the tests clicking at the diamond button on the left
+
+# Automation
+
+## [Fastlane](https://docs.fastlane.tools) Install
+_Fastlane is the easiest way to automate beta deployments and releases for your iOS and Android apps._
+
+Create a fastfile in your repository and paste the code below
+
+```
+lane :beta do
+    increment_build_number
+    build_app
+    upload_to_testflight  # Archive, validate and upload the binary to Testflight
+end
+
+lane :release do
+    capture_screenshots
+    build_app
+    upload_to_app_store       # Upload the screenshots and the binary to iTunes
+    slack                     # Let your team-mates know the new version is live
+end
+
+lane :test do
+    scan # Execute test suite
+end
+```
+
+* List of fastlane available [actions](https://docs.fastlane.tools/actions/).
+
+    
+## Lint
+    swiftlint
+    
+## Code Format
+    
+
 # Commands
 
 1. List available sdks  
     `` xcodebuild -showsdks``  
     ``xcodebuild -project ios-pipeline.xcodeproj -scheme ios-pipeline -showdestinations``  
     ``xcodebuild -project ios-pipeline.xcodeproj -scheme ios-pipeline -destination "platform=iOS Simulator,name=iPhone 8,OS=11.4" clean test``
-    
-    
-## Basics of Unit Testing
-    
-1.  Open ios-pipelineTests file and make the test fail
-    
-    ```
-    func testUnitExample() {
-        XCTAssertEqual(5+1, 2)
-    }
-    ```
-    
-2. Run the tests clicking at the diamond button on the left
-    
-## Basics of iOS UI Testing
-    
-## Fastlane Install
-    
-## Setup iTunes connect
-    provisioning profiles
-    certificates
-    prints
-    
-## Lint
-    swiftlint
-    
-## Code Format
+
+
+# TODO
+
+## Automate Changelog
+## Test Report
     
