@@ -29,12 +29,16 @@ platform :ios do
   
   lane :release do
     capture_screenshots
+    clear_derived_data
     build_app
     upload_to_app_store       # Upload the screenshots and the binary to iTunes
     slack                     # Let your team-mates know the new version is live
   end
   
   lane :test do
+    swiftlint(output_file: "swiftlint.result.json", 
+      reporter: "json", 
+      ignore_exit_status: true)
     scan
   end
 end

@@ -95,7 +95,25 @@
 ## [Fastlane](https://docs.fastlane.tools) Install
 _Fastlane is the easiest way to automate beta deployments and releases for your iOS and Android apps._
 
-Create a fastfile in your repository and paste the code below
+### Files Definition
+
+The [Appfile](https://docs.fastlane.tools/advanced/Appfile/) stores useful information that are used across all fastlane tools like your Apple ID or the application Bundle Identifier, to deploy your lanes faster and tailored on your project needs. 
+
+The [Fastfile](https://docs.fastlane.tools/advanced/Fastfile/) stores the automation configuration that can be run with fastlane.
+
+### Summary
+
+iOS deployment requires several tedious tasks, and error prone.  
+_Fastlane_ automate this tasks through ruby code, allowing it to be extended from pure ruby functions if needed, and a swift support it being developed. 
+
+It's possible to import actions from other files or repository, allowing for greater customization.  
+Since ```fastlane``` can be executed from CLI, other tools can access it's lanes, providing power to CI/CD pipelines to handle Code Signing, Testflight upload, Testing, Crashlytics uploading, Report generation with simple commands.
+
+Notifications can be sent with the execution results, improving team communication and project visualization. Source control manipulation like updating version number, changelogs, plist files, and store descriptions.
+
+### Hands On
+
+Create a fastfile, by running ```fastlane init``` in your repository root and paste the code below:
 
 ```
 lane :beta do
@@ -105,6 +123,7 @@ lane :beta do
 end
 
 lane :release do
+    cocoapoads
     capture_screenshots
     build_app
     upload_to_app_store       # Upload the screenshots and the binary to iTunes
@@ -112,6 +131,9 @@ lane :release do
 end
 
 lane :test do
+    swiftlint(output_file: "swiftlint.result.json", 
+      reporter: "json", 
+      ignore_exit_status: true) # Outputs swiftlint report
     scan # Execute test suite
 end
 ```
