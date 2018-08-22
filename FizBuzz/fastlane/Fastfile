@@ -22,12 +22,14 @@ platform :ios do
   end
 
   lane :beta do
+    test
     increment_build_number
     build_app
     upload_to_testflight  # Archive, validate and upload the binary to Testflight
   end
   
   lane :release do
+    test
     capture_screenshots
     clear_derived_data
     build_app
@@ -36,6 +38,7 @@ platform :ios do
   end
   
   lane :test do
+    # cocoapods
     swiftlint(output_file: "swiftlint.result.json", 
       reporter: "json", 
       ignore_exit_status: true)

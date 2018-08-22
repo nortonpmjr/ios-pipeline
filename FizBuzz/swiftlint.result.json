@@ -1,68 +1,5 @@
 [
   {
-    "character" : 10,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Move.swift",
-    "line" : 12,
-    "reason" : "Enum element name should start with a lowercase character: 'Number'",
-    "rule_id" : "identifier_name",
-    "severity" : "Error",
-    "type" : "Identifier Name"
-  },
-  {
-    "character" : 18,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Move.swift",
-    "line" : 12,
-    "reason" : "Enum element name should start with a lowercase character: 'Fizz'",
-    "rule_id" : "identifier_name",
-    "severity" : "Error",
-    "type" : "Identifier Name"
-  },
-  {
-    "character" : 24,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Move.swift",
-    "line" : 12,
-    "reason" : "Enum element name should start with a lowercase character: 'Buzz'",
-    "rule_id" : "identifier_name",
-    "severity" : "Error",
-    "type" : "Identifier Name"
-  },
-  {
-    "character" : 30,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Move.swift",
-    "line" : 12,
-    "reason" : "Enum element name should start with a lowercase character: 'FizzBuzz'",
-    "rule_id" : "identifier_name",
-    "severity" : "Error",
-    "type" : "Identifier Name"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Game.swift",
-    "line" : 18,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Game.swift",
-    "line" : 21,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : 55,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Game.swift",
-    "line" : 19,
-    "reason" : "Opening braces should be preceded by a single space and on the same line as the declaration.",
-    "rule_id" : "opening_brace",
-    "severity" : "Warning",
-    "type" : "Opening Brace Spacing"
-  },
-  {
     "character" : null,
     "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/AppDelegate.swift",
     "line" : 16,
@@ -262,6 +199,69 @@
   },
   {
     "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Game.swift",
+    "line" : 18,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Game.swift",
+    "line" : 21,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : 55,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Game.swift",
+    "line" : 19,
+    "reason" : "Opening braces should be preceded by a single space and on the same line as the declaration.",
+    "rule_id" : "opening_brace",
+    "severity" : "Warning",
+    "type" : "Opening Brace Spacing"
+  },
+  {
+    "character" : 10,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Move.swift",
+    "line" : 12,
+    "reason" : "Enum element name should start with a lowercase character: 'Number'",
+    "rule_id" : "identifier_name",
+    "severity" : "Error",
+    "type" : "Identifier Name"
+  },
+  {
+    "character" : 18,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Move.swift",
+    "line" : 12,
+    "reason" : "Enum element name should start with a lowercase character: 'Fizz'",
+    "rule_id" : "identifier_name",
+    "severity" : "Error",
+    "type" : "Identifier Name"
+  },
+  {
+    "character" : 24,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Move.swift",
+    "line" : 12,
+    "reason" : "Enum element name should start with a lowercase character: 'Buzz'",
+    "rule_id" : "identifier_name",
+    "severity" : "Error",
+    "type" : "Identifier Name"
+  },
+  {
+    "character" : 30,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Move.swift",
+    "line" : 12,
+    "reason" : "Enum element name should start with a lowercase character: 'FizzBuzz'",
+    "rule_id" : "identifier_name",
+    "severity" : "Error",
+    "type" : "Identifier Name"
+  },
+  {
+    "character" : null,
     "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Brain.swift",
     "line" : 16,
     "reason" : "Lines should not have trailing whitespace.",
@@ -318,132 +318,6 @@
     "character" : null,
     "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzz\/Brain.swift",
     "line" : 41,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 13,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 15,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 20,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 25,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 32,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 37,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 42,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 47,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 52,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 57,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 62,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 67,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 72,
-    "reason" : "Lines should not have trailing whitespace.",
-    "rule_id" : "trailing_whitespace",
-    "severity" : "Warning",
-    "type" : "Trailing Whitespace"
-  },
-  {
-    "character" : null,
-    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
-    "line" : 77,
     "reason" : "Lines should not have trailing whitespace.",
     "rule_id" : "trailing_whitespace",
     "severity" : "Warning",
@@ -610,6 +484,132 @@
     "rule_id" : "redundant_discardable_let",
     "severity" : "Warning",
     "type" : "Redundant Discardable Let"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 13,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 15,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 20,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 25,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 32,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 37,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 42,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 47,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 52,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 57,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 62,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 67,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 72,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/nortonpigozzo\/Development\/Beach\/iOS\/ios-pipeline\/FizBuzz\/FizBuzzTests\/BrainTests.swift",
+    "line" : 77,
+    "reason" : "Lines should not have trailing whitespace.",
+    "rule_id" : "trailing_whitespace",
+    "severity" : "Warning",
+    "type" : "Trailing Whitespace"
   },
   {
     "character" : null,

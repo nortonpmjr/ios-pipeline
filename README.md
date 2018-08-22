@@ -117,35 +117,49 @@ Create a fastfile, by running ```fastlane init``` in your repository root and pa
 
 ```
 lane :beta do
+    test
     increment_build_number
     build_app
     upload_to_testflight  # Archive, validate and upload the binary to Testflight
 end
 
 lane :release do
-    cocoapoads
+    test
     capture_screenshots
     build_app
     upload_to_app_store       # Upload the screenshots and the binary to iTunes
     slack                     # Let your team-mates know the new version is live
-end
+enda
 
 lane :test do
+    cocoapoads                                       # Install pods from podfile
     swiftlint(output_file: "swiftlint.result.json", 
       reporter: "json", 
-      ignore_exit_status: true) # Outputs swiftlint report
-    scan # Execute test suite
+      ignore_exit_status: true)                      # Outputs swiftlint report
+    scan                                             # Execute test suite
 end
 ```
 
 * List of fastlane available [actions](https://docs.fastlane.tools/actions/).
 
     
-## Lint
-    swiftlint
-    
-## Code Format
-    
+## Linter
+### [Swiftlint](https://github.com/realm/SwiftLint)
+_A tool to enforce Swift style and conventions, loosely based on GitHub's Swift Style Guide. Supported by Realm_
+
+Local install for automation use: ```brew install swiftlint```
+
+Integrate SwiftLint into an Xcode scheme to get warnings and errors displayed in the IDE. Just add a new "Run Script Phase" with:
+```
+if which swiftlint >/dev/null; then
+  swiftlint
+else
+  echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+fi
+```
+
+# Jenkins
+
 
 # Commands
 
@@ -160,3 +174,9 @@ end
 ## Automate Changelog
 ## Test Report
     
+***
+# References
+
+* [How to submit to App Store](https://code.tutsplus.com/tutorials/how-to-submit-an-ios-app-to-the-app-store--mobile-16812)
+* [Certificates Documentation](https://help.apple.com/xcode/mac/current/#/dev154b28f09)
+* [Danger and Swiftlint](https://medium.com/developermind/using-swiftlint-and-danger-for-swift-best-practices-48432e4e268a)
