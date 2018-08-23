@@ -161,22 +161,28 @@ fi
 # Jenkins
 
 
-# Commands
+# CLI Commands
 
-1. List available sdks  
+## **xcodebuild**
+* List available sdks  
     `` xcodebuild -showsdks``  
-    ``xcodebuild -project ios-pipeline.xcodeproj -scheme ios-pipeline -showdestinations``  
-    ``xcodebuild -project ios-pipeline.xcodeproj -scheme ios-pipeline -destination "platform=iOS Simulator,name=iPhone 8,OS=11.4" clean test``
 
+* List available destinations  
+    ``xcodebuild -project ios-pipeline.xcodeproj -scheme ios-pipeline -showdestinations``  
+
+* Clean and test  
+    ``xcodebuild -project ios-pipeline.xcodeproj -scheme ios-pipeline -destination "platform=iOS Simulator,name=iPhone 8,OS=11.4" clean test``
 
 # TODO
 
 ## Automate Changelog
 ## Test Report
-    
+ 
 ***
 # References
 
 * [How to submit to App Store](https://code.tutsplus.com/tutorials/how-to-submit-an-ios-app-to-the-app-store--mobile-16812)
 * [Certificates Documentation](https://help.apple.com/xcode/mac/current/#/dev154b28f09)
 * [Danger and Swiftlint](https://medium.com/developermind/using-swiftlint-and-danger-for-swift-best-practices-48432e4e268a)
+* [Danger](https://danger.systems/js/swift.html)
+* [Xcodebuild from CLI](https://medium.com/xcblog/xcodebuild-deploy-ios-app-from-command-line-c6defff0d8b8)
