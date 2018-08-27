@@ -186,3 +186,4 @@ fi
 * [Danger and Swiftlint](https://medium.com/developermind/using-swiftlint-and-danger-for-swift-best-practices-48432e4e268a)
 * [Danger](https://danger.systems/js/swift.html)
 * [Xcodebuild from CLI](https://medium.com/xcblog/xcodebuild-deploy-ios-app-from-command-line-c6defff0d8b8)
+* [Jenkins + Fastlane](http://thebugcode.github.io/ios-continous-integration-choosing-a-build-server-and-tooling/)
