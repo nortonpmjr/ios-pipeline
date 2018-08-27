@@ -1,6 +1,6 @@
 os: osx
-install:
- - pod install
+# install:
+#  - pod install
 
 script:
   - cd FizBuzz
