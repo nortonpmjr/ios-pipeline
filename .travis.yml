@@ -1,10 +1,27 @@
 os: osx
-install:
- - xcode-select --install
- - gem install fastlane -NV
- - export LC_ALL=en_US.UTF-8
- - export LANG=en_US.UTF-8
+branches:
+  only:
+    - master
 
-script:
-  - cd FizBuzz
-  - fastlane test
+before_install:
+ - gem install fastlane  --no-ri --no-rdoc --no-document
+# install:
+#  - gem install fastlane -NV
+#  - export LC_ALL=en_US.UTF-8
+#  - export LANG=en_US.UTF-8
+
+# script:
+#   - cd FizBuzz
+#   - fastlane test
+
+  jobs:
+  include:
+    # - stage: Swiflint
+      # script:
+        # - ./Pods/SwiftLint/swiftlint --reporter junit
+    - stage: Testing
+      script:
+        - cd FizBuzz && fastlane test
+    # - stage: XCUITest
+    #   script:
+    #     - fastlane scan -s SwiftLint-CIUITests
