@@ -1,6 +1,9 @@
 os: osx
-# install:
-#  - pod install
+install:
+ - xcode-select --install
+ - gem install fastlane -NV
+ - export LC_ALL=en_US.UTF-8
+ - export LANG=en_US.UTF-8
 
 script:
   - cd FizBuzz
