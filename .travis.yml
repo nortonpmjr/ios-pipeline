@@ -1,0 +1,7 @@
+os: osx
+install:
+ - pod install
+
+script:
+  - cd FizBuzz
+  - fastlane test
