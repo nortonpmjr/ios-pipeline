@@ -1,11 +1,3 @@
-//
-//  ViewControllerUITest.swift
-//  FizBuzzUITests
-//
-//  Created by Norton Pigozzo Martins Junior on 23/05/18.
-//  Copyright © 2018 Norton Pigozzo Martins Junior. All rights reserved.
-//
-
 import XCTest
 
 class ViewControllerUITest: XCTestCase {

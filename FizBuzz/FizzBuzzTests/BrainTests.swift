@@ -1,13 +1,5 @@
-//
-//  BrainTests.swift
-//  FizBuzzTests
-//
-//  Created by Norton Pigozzo Martins Junior on 22/05/18.
-//  Copyright © 2018 Norton Pigozzo Martins Junior. All rights reserved.
-//
-
 import XCTest
-@testable import FizBuzz
+@testable import FizzBuzz
 
 class BrainTests: XCTestCase {
     
