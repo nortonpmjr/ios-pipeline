@@ -1,7 +1,6 @@
  # iOS Pipeline
  1. Download [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
- 2. Create project from Xcode Wizard
- 3. Clone project [ios-pipeline](https://github.com/nortonpmjr/ios-pipeline)
+ 2. Create project from Xcode Wizard **or** Clone project [ios-pipeline](https://github.com/nortonpmjr/ios-pipeline)
  4. Open FizzBuzz project
 
 
