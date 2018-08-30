@@ -1,7 +1,6 @@
  # iOS Pipeline
  1. Download [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
- 2. Create project from Xcode Wizard
- 3. Clone project [ios-pipeline](https://github.com/nortonpmjr/ios-pipeline)
+ 2. Create project from Xcode Wizard **or** Clone project [ios-pipeline](https://github.com/nortonpmjr/ios-pipeline)
  4. Open FizzBuzz project
 
 
@@ -233,3 +232,4 @@ script:
 * [Xcodebuild from CLI](https://medium.com/xcblog/xcodebuild-deploy-ios-app-from-command-line-c6defff0d8b8)
 * [Jenkins + Fastlane](http://thebugcode.github.io/ios-continous-integration-choosing-a-build-server-and-tooling/)
 * [How to export “in-house”](https://medium.com/wso2-iot/how-to-export-in-house-developed-ios-app-as-an-enterprise-application-dc087bdd64c3)
+
