@@ -232,4 +232,5 @@ script:
 * [Xcodebuild from CLI](https://medium.com/xcblog/xcodebuild-deploy-ios-app-from-command-line-c6defff0d8b8)
 * [Jenkins + Fastlane](http://thebugcode.github.io/ios-continous-integration-choosing-a-build-server-and-tooling/)
 * [How to export “in-house”](https://medium.com/wso2-iot/how-to-export-in-house-developed-ios-app-as-an-enterprise-application-dc087bdd64c3)
+* [Xcode Help](https://help.apple.com/xcode/mac/current/#/devc8c2a6be1)
 

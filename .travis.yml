@@ -6,8 +6,5 @@ branches:
 before_install:
  - gem install fastlane  --no-ri --no-rdoc --no-document
 
-jobs:
-include:
-  - stage: Lane Test
     script:
       - cd FizBuzz && fastlane test
