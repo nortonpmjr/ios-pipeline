@@ -15,25 +15,35 @@
 
 # Requirements
 
-## Create an App ID  
-1. Access Apple Developer, and click on:  
-2. Account ![Image](images/apple-dev-account.png)  
-3. Certificates, IDs & Profiles ![Image](images/apple-dev-home.png)
-4. App ID ![Image](images/appid.png)
+## **Create an App ID**
+1. Access Apple Developer
+2. Click on account ![Image](images/apple-dev-account.png)  
+3. Click on Certificates, IDs & Profiles ![Image](images/apple-dev-home.png)
+4. Click on App ID ![Image](images/appid.png)
 5. Enter a name or description  
 6. Select Explicit App ID and adds your bundle id  
-7. Continue * App Services can be left with default options
+7. Continue *App Services can be left with default options*
 ![Image](images/appid-register-0.png)  ![Image](images/appid-register-1.png)
 
-## Certificates
+## [**App Signing**](https://help.apple.com/xcode/mac/current/#/dev3a05256b8)
+
+Code signing (or signing) an app allows the system to identify who signed the app and to verify that the app has not been modified since it was signed.
+
+The operating system verifies the signature of apps downloaded from the App Store to ensure that apps with invalid signatures don’t run. An app’s executable code is protected by its signature because the signature becomes invalid if any of the executable code in the app bundle changes. A valid signature lets users trust that the app was signed by an Apple source and hasn’t been modified since it was signed.
+
+
+## **Certificates**
+
+*Xcode uses your signing certificate to sign your app during the build process. The signing certificate consists of a public-private key pair and a certificate. The private key is used by cryptographic functions to generate the signature. The certificate is issued by Apple; it contains the public key and identifies you as the owner of the key pair. In order to sign apps, you must have both parts of your signing certificate, and an Apple certificate authority in your keychain.*
+
 1. iOS App Development  
 2. Follow CSR instructions  
 3. Download and keep it safe  
 
 * **Development Certificates: Belong to individuals and one iOS Development or Mac Development is allowed per Mac.**  
-* **Distribution Certificates: belongs to the team and is required for publishing Apps. To share signing certificate with another person on the team you need to export it. On the other person’s Mac, double-click the exported file to install the signing certificate in the keychain.**  
+* **Distribution Certificates: belongs to the team and is required for publishing Apps. To share signing certificate with another person on the team you need to export it. On the other person’s Mac, double-click the exported file to install the signing certificate in the keychain.**
 
-## Provisioning Profile  
+## **Provisioning Profile**
 1. Click on Provisioning Profile Development
 2. Add
 3. In House
@@ -48,7 +58,7 @@
 3. Select or create a new app  
 4. Provide the requested informations (name, bundleID)
 5. Go to Prepare for submission  
-6. Once you upload an binary and it finishes procesing you have to select it here, to send it to the review process
+6. Once you upload an binary and it finishes processing you have to select it here, to send it to the review process
 
 ![Image](images/itc-home.png)
 ![Image](images/itc-apps.png)
@@ -65,7 +75,7 @@
     func testMoveScore() {
         viewController.play(move: Move.Number)
         let newScore = viewController.gameScore!
-        XCTAssertEqual(newScore, 5)
+        XCTAssertEqual(newScore, 3)
     }
     ```
 
@@ -82,7 +92,7 @@
         
         numberButton.tap()
         let newScore = numberButton.label
-        XCTAssertEqual(newScore, "5")
+        XCTAssertEqual(newScore, "3")
     }
     ```
 
@@ -95,13 +105,15 @@
 ## [Fastlane](https://docs.fastlane.tools) Install
 _Fastlane is the easiest way to automate beta deployments and releases for your iOS and Android apps._
 
-### Files Definition
+### **Files Definition**
+***
 
 The [Appfile](https://docs.fastlane.tools/advanced/Appfile/) stores useful information that are used across all fastlane tools like your Apple ID or the application Bundle Identifier, to deploy your lanes faster and tailored on your project needs. 
 
 The [Fastfile](https://docs.fastlane.tools/advanced/Fastfile/) stores the automation configuration that can be run with fastlane.
 
-### Summary
+### **Summary**
+***
 
 iOS deployment requires several tedious tasks, and error prone.  
 _Fastlane_ automate this tasks through ruby code, allowing it to be extended from pure ruby functions if needed, and a swift support it being developed. 
@@ -111,7 +123,8 @@ Since ```fastlane``` can be executed from CLI, other tools can access it's lanes
 
 Notifications can be sent with the execution results, improving team communication and project visualization. Source control manipulation like updating version number, changelogs, plist files, and store descriptions.
 
-### Hands On
+### **Hands On**
+***
 
 Create a fastfile, by running ```fastlane init``` in your repository root and paste the code below:
 
@@ -129,7 +142,7 @@ lane :release do
     build_app
     upload_to_app_store       # Upload the screenshots and the binary to iTunes
     slack                     # Let your team-mates know the new version is live
-enda
+end
 
 lane :test do
     cocoapoads                                       # Install pods from podfile
@@ -160,6 +173,38 @@ fi
 
 # Jenkins
 
+## Install
+## Configuration
+
+# Travis CI
+
+## Register
+[Sign in](https://travis-ci.org) with github account
+
+## Requirements
+* Repository must be hosted at [github](www.github.com) and be public **OR** pay for another plan.
+
+## Configuration
+Select the repository you want to create a pipeline.
+![Image](images/travis-repo-list.png)
+
+Create a .travis.yml file at your root folder.
+Copy and paste  
+**os**: Defines
+
+```
+os: osx
+branches:
+  only:
+    - master
+
+before_install:
+ - gem install fastlane  --no-ri --no-rdoc --no-document
+
+script:
+ - cd FizBuzz && fastlane test
+```
+
 
 # CLI Commands
 
@@ -187,3 +232,4 @@ fi
 * [Danger](https://danger.systems/js/swift.html)
 * [Xcodebuild from CLI](https://medium.com/xcblog/xcodebuild-deploy-ios-app-from-command-line-c6defff0d8b8)
 * [Jenkins + Fastlane](http://thebugcode.github.io/ios-continous-integration-choosing-a-build-server-and-tooling/)
+* [How to export “in-house”](https://medium.com/wso2-iot/how-to-export-in-house-developed-ios-app-as-an-enterprise-application-dc087bdd64c3)

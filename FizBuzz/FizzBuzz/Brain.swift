@@ -22,14 +22,14 @@ class Brain {
         
 //        var result = String(describing: number)
         if isDivisibleByFifteen(number: number) {
-            return Move.FizzBuzz
+            return Move.fizzBuzz
         } else if isDivisibleByThree(number: number) {
-            return Move.Fizz
+            return Move.fizz
         } else if isDivisibleByFive(number: number) {
-            return Move.Buzz
+            return Move.buzz
         }
         
-        return Move.Number
+        return Move.number
         
     }
 }

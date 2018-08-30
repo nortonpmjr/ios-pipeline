@@ -21,7 +21,7 @@ class ViewControllerUnitTests: XCTestCase {
     }
     
     func testMove1IncrementsScore() {
-        viewController.play(move: Move.Number)
+        viewController.play(move: Move.number)
         let newScore = viewController.gameScore!
         XCTAssertEqual(newScore, 1)
     }
@@ -31,39 +31,39 @@ class ViewControllerUnitTests: XCTestCase {
     }
     
     func testPlayShouldReturnIfMoveRight() {
-        let response = viewController.game?.play(move: Move.Number)
+        let response = viewController.game?.play(move: Move.number)
         XCTAssertNotNil(response?.right)
     }
     
     func testPlayShouldReturnNewScore() {
-        let response = viewController.game?.play(move: Move.Number)
+        let response = viewController.game?.play(move: Move.number)
         XCTAssertNotNil(response?.score)
     }
     
     func testFizzIncrementScore() {
         viewController.game?.score = 2
-        viewController.play(move: Move.Fizz)
+        viewController.play(move: Move.fizz)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 3)
     }
     
     func testBuzzIncrementScore() {
         viewController.game?.score = 4
-        viewController.play(move: Move.Buzz)
+        viewController.play(move: Move.buzz)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 5)
     }
     
     func testFizzBuzzIncrementScore() {
         viewController.game?.score = 14
-        viewController.play(move: Move.FizzBuzz)
+        viewController.play(move: Move.fizzBuzz)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 15)
     }
 
     func testUserIncorrectPlay() {
         viewController.game?.score = 13
-        viewController.play(move: Move.FizzBuzz)
+        viewController.play(move: Move.fizzBuzz)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 13)
     }

@@ -37,20 +37,20 @@ class ViewController: UIViewController {
         gameScore = response.score
     }
     @IBAction func buttonTapped(_ sender: Any) {
-        play(move: Move.Number)
+        play(move: Move.number)
         
     }
     
     @IBAction func fizzTapped(_ sender: Any) {
-        play(move: .Fizz)
+        play(move: .fizz)
     }
     
     @IBAction func buzzTapped(_ sender: Any) {
-        play(move: .Buzz)
+        play(move: .buzz)
     }
     
     @IBAction func fizzBuzzTapped(_ sender: Any) {
-        play(move: .FizzBuzz)
+        play(move: .fizzBuzz)
     }
     
 }
